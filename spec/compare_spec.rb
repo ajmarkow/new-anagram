@@ -1,4 +1,4 @@
-require("./compare")
+require("compare")
 require "rspec"
 
 describe ("Compare") do
@@ -23,10 +23,10 @@ describe ("Compare") do
   end
 end
 describe ("makewordsconsistent") do
-  test = Compare.new("tea", "tea")
-  word = "CAR"
+  test = Compare.new("TEA", "TEA")
+  test.makewordsconsistent
   it("downcases words") do
-    expect(test.makewordsconsistent(word)).to((eq("car")))
+    expect(test.word).to((eq("tea")))
   end
 end
 
