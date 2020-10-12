@@ -1,4 +1,4 @@
-require "./compare.rb"
+require "./lib/compare"
 
 puts "Give me two words, and i'll tell you if they are Anagrams or Antigrams."
 puts "Lets start with the first word:"
