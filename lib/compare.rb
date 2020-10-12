@@ -45,7 +45,7 @@ class Compare
     splitwordvalue = (splitword.map { |element| alphabethash.fetch(element) }).inject(0, &:+)
     splitotherword = otherword.split("")
     splitotherwordvalue = (splitotherword.map { |element| alphabethash.fetch(element) }).inject(0, &:+)
-    return splitwordvalue == splitotherwordvalue
+    return splitwordvalue != splitotherwordvalue
   end
 
   def splitasentence(sentence)
